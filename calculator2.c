@@ -9,19 +9,22 @@ int main()
 	scanf("%d",no2);
 
 	printf("what operation would you like to operate? \n");
-	printf("1.for addition type '+' \n 2.for substraction type '-' \n 3.for multiplication type '*' \n");
+	printf("1.for addition type '+' \n 2.for substraction type '-' \n 3.for multiplication type '*' \n 4.for division type '/' \n");
 	scanf("%c",oper);
 	
 	switch(oper)
 	{
-		case 'a' :
+		case '+' :
 			result=no1+no2;
 			break;
-		case 'b' :
+		case '-' :
 			result=no1-no2;
 			break;
-		case 'c' :
+		case '*' :
 			result=no1*no2;
+			break;
+		case '/' :
+			result=no1/no2;
 			break;
 	}
 	return 0;
